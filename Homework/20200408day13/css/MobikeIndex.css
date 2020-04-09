@@ -1,78 +1,362 @@
+*{
+    box-sizing: border-box;
+}
+
 html,body{
-    width: 100%;
-    height: 100%;
+   height: 100%;
+   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
 }
 
-.main{
-    position: relative;
+.globalNavigationWrap, .headingWrap, .headlineNews{
+    position: absolute;
+    z-index: 1000;
 }
 
-.swipperContainer img{
-     display: block;
-     width: 100%;
- }
-
+/*版心*/
 .containerMd{
-    position: relative;
-    width: 100%;
+    width: 1080px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.globalNavigation{
+.main{
+    position: relative;    
+    height: 100%;
+}
+
+/* Swipper Setting Section */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    content: '';
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    position: relative;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+} 
+
+.globalNavigationWrap{
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -540px;
-
+    padding: 14.4px 0;
     width: 1080px;
     height: 80px;
-    background-color: yellow;
- }
+    color: #fff;
+}
+
+.globalNavigation{
+    font-weight: 400;
+}
+
+.globalNavigation .logoLinks{
+    width: 60%;
+    display: block;
+    float: left;
+}
+.globalNavigation .navLinks{
+    width: 40%;
+    display: block;
+    float: right;
+}
+
+.navLinks > li > a {
+    display: block;
+    float: right;
+    padding: .5em 20px;
+    cursor: pointer;
+    transition: color .2s ease;
+    color: #fff;
+}
 
 .headingWrap {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -540px;
-    /* margin-top: -40px; */
-
-    width: 100%;
     width: 1080px;
     height: 80px;
-    background-color: yellow;
+}
+
+.headingWrap .fontLogo {
+    font-size: 420%;
+    font-weight: bold;
+    line-height: 1;
+    transition: color .2s ease;
+    color: #fff;
+}
+.headingWrap .btnSwiper{
+    margin-top: 22px;
+    box-shadow: rgba(102, 77, 79, 0.6) 0px 6px 30px 0px;
+    opacity: 1;
+    transition: color .2s ease, background .2s ease, border .2s ease, opacity .4s ease .8s, box-shadow .2s ease;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 14px 26px;
+    letter-spacing: .1em;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, .6);
+    display: inline-block !important;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none;
+    touch-action: manipulation;
 }
 
 .headlineNews{
     position: absolute;
     bottom: 0;
-    left: 50%;
-    margin-left: -540px;
-
-    width: 1080px;
-    height: 40px;
-    background-color: yellow;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 100%;
+    background: rgba(102, 77, 79, 0.4);
 }
+
+.headlineNews .headlineIcon{
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #ec614f 0%, #ff2e2e 100%);
+    color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+.headlineNews .headlineText {
+    float: left;    
+    margin-left: .5em;
+    font-weight: lighter;
+    color: #fff;
+}
+/* 第二行样式 */
 .heroPromotion .promotion{
     float: left;
     height: 250px;
     width: 25%;
-    margin-left: -1px;
-    text-align: center;
-    border: 1px solid #fff;
+    margin-left: -2px;
+    border: 2px solid #fff;
     background-color: #b2300b;
     box-sizing: border-box;
 }
+
+.heroPromotion .promotion:first-child {
+    border-left: none;
+}
+.heroPromotion .promotion {
+    float: left;
+    width: 25%;
+    min-height: 260px;
+    padding: 2.4vw;
+    text-align: center;
+    border: 1px solid #fff;
+    border-top-width: 2px;
+    border-bottom: none;
+    background-color: #b2300b;
+    background-position: center center;
+    background-size: cover;
+}
+
+.heroPromotion .promotion .promoTest {
+    color: #fff;
+}
+
+.heroPromotion .promotion .promoTest h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* 第三行CSS样式 */
+.metaLinkWrap .metaLink{
+    display: -webkit-box;
+    display: flex;
+    padding: 45px 0;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.metaLinkWrap .metaLink .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .containerMd .metaLink{
     float: left;
     width: 33.33%;
     height: 140px;
-    background-color: violet;
 }
 
-@media screen and (max-width:1080px){
+/* 底部导航 */
+.footerWrap{
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.footerWrap .footerFirst{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-top: 1px solid #eee; */
+}
+
+.footer {
+    display: -webkit-box;
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    flex-wrap: wrap;
+}
+
+.footerSecond {
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    flex-wrap: wrap;
+}
+
+.mainLinks{
+    /* height: 155px;
+    margin-right: 40px;
+    -webkit-box-flex: 2; */
+    flex-grow: 2;
+}
+
+.footer .mainLinks li {
+    line-height: 2.3;
+}
+.footer .mainLinks .fontLogo {
+    display: block;
+    width: 160px;
+    /* height: 61px; */
+    text-indent: -99999px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer .mainLinks a {
+    margin-bottom: 10px;
+}
+
+/* Footer右侧栏 */
+@media (min-width: 641px){
+    .footer .footerListWrap{
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+    }
+}
+
+.footer .footerListWrap{
+    display: flex;
+    height: 155px;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 641px){
+    .footer .footerList:first-child {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px){
+    .footer .footer-list {
+        margin-bottom: 0;
+        margin-left: 8vw;
+        flex-basis: auto;
+    }
+}
+.footer .footerList {
+    display: block;
+    float: left;
+    margin-left: 115px;
+    font-size: 15px;
+}
+
+.footer .footerList h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footerListWrap a{
+    color: black;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer .footerList ul li {
+    line-height: 2;
+}
+
+.footer .mainLinks .icp {
+    font-size: 12px;
+    margin-top: 4px;
+    color: #aaa;
+}
+
+.beian-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: -3px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* 媒体查询设备适配 */
+@media (max-width:1080px){
     .heroPromotion .promotion{
         width: 50%;
+    }
+
+    .containerMd, .globalNavigationWrap, .headingWrap, .headlineNews{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .globalNavigationWrap, .headingWrap, .headlineNews{
+        left: 50%;
+        margin-left: -50%;
     }
 }
 
@@ -85,28 +369,3 @@ html,body{
         width: 50%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-/* 
-3.https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-3.jpg
-4.https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-4.jpg
-5.https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-5.jpg
-6.https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-6.jpg
-7.https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-7.jpg
-8.https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-8.jpg
- */
