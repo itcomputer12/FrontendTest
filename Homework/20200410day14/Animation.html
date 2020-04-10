@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/arun.css">
+    <link rel="stylesheet" href="css/morphingcubes.css">
+</head>
+
+<body>
+    <!-- 飞鸟部分 -->
+    <div class="container">
+        <div class="bird-container bird-container--one">
+            <div class="bird bird--one"></div>
+        </div>
+
+        <div class="bird-container bird-container--two">
+            <div class="bird bird--two"></div>
+        </div>
+
+        <div class="bird-container bird-container--three">
+            <div class="bird bird--three"></div>
+        </div>
+
+        <div class="bird-container bird-container--four">
+            <div class="bird bird--four"></div>
+        </div>
+    </div>
+    <!-- <iframe src="css/12228.wav" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> -->
+
+    <!-- <iframe src="css/12228.wav" allow="autoplay" id="audio" style="display: none"></iframe>
+
+    <audio id="player" autoplay loop>
+        <source src="css/12228.wav" type="">
+    </audio> -->
+
+    <!-- 技能部分 -->
+    <h1 style="text-align: center;">These skills are used by me in the past. But excelling in one aspect is enough.
+    </h1>
+    <script src="js/morphingcubes.js"></script>
+    <div class="controls">
+        <div class="bottomControl">
+            <p>点击触发3D变换</p>
+            <div>
+                <button onclick="toggleShape()">请点我</button>
+            </div>
+            <div>
+                <input type="checkbox" id="backfaces" onclick="toggleBackfaces()" checked><label
+                    for="backfaces">是否能看到立方体的后面</label>
+            </div>
+        </div>
+        <div class="topcontrol">
+            <p>森林鸟叫控制</p>
+            <audio class="music" src="css/12228.wav" controls></audio>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="stage">
+            <div id="shape" class="cube backfaces">
+                <div class="plane one">HTML</div>
+                <div class="plane two">CSS</div>
+                <div class="plane three">MySQL</div>
+                <div class="plane four">Nginx</div>
+                <div class="plane five">Golang</div>
+                <div class="plane six">MongoDB</div>
+                <div class="plane seven">Java</div>
+                <div class="plane eight">Linux</div>
+                <div class="plane nine">H3CSE</div>
+                <div class="plane ten">IELTS</div>
+                <div class="plane eleven">Python</div>
+                <div class="plane twelve">AppleScript</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
