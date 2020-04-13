@@ -1,0 +1,263 @@
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+.head{
+    margin: 0 auto;
+    display: block;
+    width: 1226px;
+    height: 142px;
+    line-height: 142px;
+    background-color: aquamarine;
+}
+
+.navSwiper{
+    position: relative;
+    margin: 0 auto;
+    width: 1225px;
+
+}
+.swiper-container{
+    width: 1226px;
+    height: 460px;
+} 
+
+.swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination {
+    text-align: right;
+}
+
+.swiper-button-prev{
+    position: absolute;
+    left: 234px;
+}
+
+/* 侧边栏样式 */
+.siteCategory{
+    /* position: relative; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    height: 460px;
+    /* width: 100%; */
+    width: 234px;
+    color: #fff;
+    background-color: rgba(105,101,101,.6);
+}
+
+.siteCategory .siteCategoryList{
+    display: block;
+    padding-left: 30px;
+    width: 214px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    font-size: 14px;
+}
+.siteCategory .siteCategoryList:hover{
+    background-color: #ff6700;
+}
+
+/* 右边小图标样式 */
+.categoryItem{
+    position: relative;
+}
+.categoryItem  .siteCategoryList::after{
+    position: absolute;
+    left: 194px;
+    top: 16px;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(135deg);
+}
+
+
+/* .siteCategory li:hover .categoryLayer{ */
+li:hover .categoryLayer{
+    display: block;
+}
+
+/* 辅导导航部分Start */
+/* .children { */
+.categoryLayer {
+    display: none;
+    position: absolute;
+    left: 234px;
+    top: 0;
+    z-index: 24;
+    height: 459px;
+    width: 800px;
+    /* height: 458px; */
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    background: #fff;
+    /* -webkit-box-shadow: 0 8px 16px rgba(0,0,0,.18); */
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+}
+
+
+.categoryLayer .children-list-col {
+    float: left;
+    width: 265px;
+}
+
+.categoryLayer .children-list {
+    height: 458px;
+    margin: 0;
+    padding: 2px 0;
+    list-style-type: none;
+}
+
+.categoryLayer .children-list li {
+    position: relative;
+    float: left;
+    width: 265px;
+    height: 76px;
+}
+
+.categoryLayer .link {
+    display: block;
+    padding: 18px 20px;
+    line-height: 40px;
+    color: #333;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+
+.categoryLayer .children-list .thumb {
+    float: left;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+
+.categoryLayer .text {
+    float: left;
+    width: 172px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 浮动导航部分End */
+
+
+/* 哈哈哈😆这个是个分割线,下面是网易动画部分  */
+/* body {
+    font-family: "Microsoft YaHei",simSun,"Lucida Grande","Lucida Sans Unicode",Arial;
+    font-size: 12px;
+    min-width: 1260px;
+    line-height: 1.5;
+} */
+
+.footer {
+    position: relative;
+    padding-top: 521px;
+    min-height: 276px;
+    background: url(https://xyq.res.netease.com/pc/gw/20170118103441/img/ft2_7b14393.webp) no-repeat center top;
+    background-color: #86a5d3;
+}
+.west-01 {
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    left: 50%;
+    margin-left: -398px;
+    top: 352px;
+    background-image: url(https://xyq.res.netease.com/pc/gw/20170118103441/img/west_01_3ca39fe.png);
+    background-repeat: no-repeat;
+    -webkit-animation: play01 1.4s steps(8) infinite;
+    -moz-animation: play01 1.4s steps(8) infinite;
+    -ms-animation: play01 1.4s steps(8) infinite;
+    animation: play01 1.4s steps(8) infinite;
+}
+
+@keyframes play01{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1600px 0;
+    }
+}
+
+.west-02 {
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    left: 50%;
+    margin-left: -198px;
+    top: 356px;
+    background-image: url(https://xyq.res.netease.com/pc/gw/20170118103441/img/west_02_47bad19.png);
+    background-repeat: no-repeat;
+    -webkit-animation: play02 1.4s steps(8) infinite;
+    -moz-animation: play02 1.4s steps(8) infinite;
+    -ms-animation: play02 1.4s steps(8) infinite;
+    animation: play02 1.4s steps(8) infinite;
+}
+@keyframes play02{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1600px 0;
+    }
+}
+
+.west-03 {
+    position: absolute;
+    width: 170px;
+    height: 240px;
+    left: 50%;
+    margin-left: -11px;
+    top: 326px;
+    background-image: url(https://xyq.res.netease.com/pc/gw/20170118103441/img/west_03_f962447.png);
+    background-repeat: no-repeat;
+    -webkit-animation: play03 1.4s steps(8) infinite;
+    -moz-animation: play03 1.4s steps(8) infinite;
+    -ms-animation: play03 1.4s steps(8) infinite;
+    animation: play03 1.4s steps(8) infinite;
+}
+
+@keyframes play03{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1360px 0;
+    }
+}
+
+.west-04 {
+    position: absolute;
+    width: 210px;
+    height: 200px;
+    left: 50%;
+    margin-left: 198px;
+    top: 372px;
+    background-image: url(https://xyq.res.netease.com/pc/gw/20170118103441/img/west_04_6516d80.png);
+    background-repeat: no-repeat;
+    -webkit-animation: play04 1.4s steps(8) infinite;
+    -moz-animation: play04 1.4s steps(8) infinite;
+    -ms-animation: play04 1.4s steps(8) infinite;
+    animation: play04 1.4s steps(8) infinite;
+}
+
+@keyframes play04{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1680px 0;
+    }
+}

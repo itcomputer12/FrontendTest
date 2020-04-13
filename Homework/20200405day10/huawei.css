@@ -1,0 +1,213 @@
+body{
+    background-color: #c0e6f2;
+    width: 100%;
+    overflow-x: hidden;
+}
+.ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+area{
+    outline: none;
+}
+
+.headNavigator{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    background: url(https://res3.vmallres.com/shopdc/pic/2adb9edd-efd5-4c11-895e-108e96024b69.jpg) center center no-repeat;
+}
+.headNavigatorContent{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.headNavigatorContent li{
+    float: left;
+    width: 240px;
+    height: 50px;
+    text-indent: -9999px;
+}
+.headNavigatorContent li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.moveRightPosition{
+    height: 50px;
+    margin-top: -50px;
+}
+
+.picWrap{
+    text-align: center;
+    position: relative;
+    width: 10000%;
+    left:50%;
+    margin-left:-5000%
+
+}
+
+.picWrap img{
+    display: inline-block;
+} 
+
+.gridFirst{
+    height: 940px;
+    width: 1200px;
+    background-color: #c0e6f2;
+    margin: 0 auto;
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
+}
+.onlyOneline{
+    height: 470px;
+}
+
+
+.layout{
+    display: block;
+    height: 100%;
+    /* margin: 0 auto; */
+}
+.layout ul{
+    display: block;
+    height: 100%;
+    margin-left: -5px;
+    /* margin: 0 auto; */
+}
+
+
+.gridItem{
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-left: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.gridItem .pic img{
+    width: 290px;
+    height: 290px;
+}
+.gridItem > a{
+    display: block;
+    position: relative;
+    /* z-index: 20; */
+    background-color: white;
+    /* margin: 0 auto; */
+    /* border-style: dotted; */
+}
+.gridItem .title{
+    margin: 24px 15px 0 15px;
+    width: 260px;
+    height: 30px;
+    font-size: 22px;
+    color: #222222;
+    text-align: center;
+}
+.gridItem .desc{
+    margin: 5px 15px 0 15px;
+    width: 260px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+}
+
+.gridItem .priceWrp{
+    margin-top: 20px;
+    width: 290px;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    padding-bottom: 20px;
+}
+.priceWrp .price{
+    min-width: 110px;
+    max-width: 225px;
+    color: #FFFFFF;
+    background-color: #115c7a;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gridItem .priceWrp > p{
+    display: inline-block;
+    border-radius: 18px;
+    height: 36px;
+    line-height: 36px;
+
+}
+
+.priceWrp .price .priceCurrency{
+    font-size: 14px;
+    /* padding-bottom: 20px; */
+}
+
+.priceWrp .price .priceAmount{
+    font-size: 22px;
+    font-weight: bold;
+    max-width: 122px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.gridItem .sale{
+    position: absolute;
+    top: 268px;
+    left: 0;
+    max-width: 265px;
+    height: 22px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 15px;
+    color: #fff;
+    /* background-color: #db232a; */
+    background-color: #115c7a;
+    border-radius: 11px 11px 11px 0;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+.FlipOnTheTop{
+    width: 1200px;
+    position:relative;
+    margin: 0 auto; 
+}
+
+.vipMember{
+    position: absolute;
+    right: 53px;
+    bottom: -49px;
+    width: 354px;
+    height: 507px;
+}
+.vipFlipContent .prizeContent{
+    width: 267px;
+    height: 136px;
+    padding-left: 44px;
+    padding-right: 44px;
+    text-align: left;
+    /* height: 136px;  */
+    display: -webkit-box; 
+    -webkit-line-clamp: 6; 
+    -webkit-box-orient: vertical; 
+    word-break: break-word; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color: #908C8A;
+}
+.prizeContent .vRule p{
+    text-align: left;
+    color: red;
+}

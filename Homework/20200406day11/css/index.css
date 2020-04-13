@@ -1,0 +1,88 @@
+
+.mod-content{
+    width: 1200px;
+    margin:0 auto 20px;
+    background-color: forestgreen;
+    transition-property: all;
+}
+
+.header{height: 83px;}
+
+/* .swiper{height: 361px;} */
+.swiper{
+    position: relative;
+    /* height: 360px; */
+}
+
+.swiper-container img {
+    width: 100%;
+    height: 360px;
+}
+.mod-con-box{height: 361px;}
+.mod-content-wrap{height:468px;background-color: fuchsia;margin-bottom: 20px;}
+.mod-content-wrap .mod-content{height: 100%;}
+.footer{width:100%;background-color: #000;height:368px}
+.footer .mod-content{height: 100%;}
+
+
+/* 导航模块 */
+.nav-category {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 240px;
+    height: 360px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-category li {
+    width: 240px;
+    height:72px;
+}
+/* :last-child 最后一个li里面的  span 标签的下边框线去掉 :nth-child(5) 第几个子元素 */
+.nav-category li:last-child .name-category{
+    border:0;
+}
+.name-category {
+    position: relative;
+    display: block;
+    height: 71px;
+    line-height: 71px;
+    margin:0 26px 0 27px;
+    border-bottom: 1px solid red;
+    color:#fff;
+    font-size:14px;
+    /* background-color: greenyellow; */
+}
+.name-category::after{
+    position: absolute;
+    top:50%;
+    right:0;
+    content: "";
+    display: block;
+    width:10px;
+    height: 10px;
+    margin-top:-5px;
+    border-top:3px solid #fff;
+    border-left:3px solid #fff;
+    /* 旋转一定的角度  transform:rotate(0deg) */
+    transform: rotate(135deg);
+}
+.category-layer{
+    position: absolute;
+    top:0;
+    left:240px;
+    display: none;
+    width: 573px;
+    height: 360px; 
+    background-color: gold;   
+}
+.nav-category li:hover .category-layer{
+    display: block;
+}
+.nav-category li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+

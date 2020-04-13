@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        body{
+            background-image: url("reg_bg_min.jpg");
+            background-size: auto;
+            font-family: PingFang-SC-Regular,Helvetica,"Microsoft Yahei";
+        }
+
+        /* .backgroudImg img{
+            display: none;
+            width: 100%;
+            height: 100%;
+        } */
+        .content .left .baiduLogo{
+            position: fixed;
+            left: 70px;
+            top: 60px;
+            width: 125px;
+            height: 40px;
+        }
+
+        .content .left .baiduSlogan{
+            position: fixed;
+            left: 200px;
+            top: 250px;
+            font-size: 54px;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: #fff;
+        }
+
+        .content .left .new_reg_footer{
+            position: fixed;
+            left: 70px;
+            top: 600px;
+            letter-spacing: 0;
+            color: #fff;
+            float: left;
+            /* display: inline-block; */
+        }
+
+        .content .left .new_reg_footer p{
+            opacity: .8;
+            display: inline-block;
+        }
+
+        .content .left .new_reg_footer span{
+            opacity: .54;
+            font-size: 12px;
+            color: #fff;
+            display: inline-block;
+            padding-left: 20px;
+        }
+
+        .content .left .baiduSlogan p{
+            font-size: 32px;
+        }
+
+        .content .right{ 
+            /* margin-top: -259px;  */
+            width: 480px;
+            background-color: rgba(255,255,255,.9);
+            position: absolute;
+            right: 139px;
+            top: 10%;
+            bottom: 15%;
+            overflow: hidden;
+            font-size: 60px;
+            display: block;
+            float: left;
+            border-radius: 10px;
+        }
+        #login_btn{
+            color: royalblue;            
+        }
+        .content .new_reg_guide_login h3{
+            font-size: 36px;
+            color: #000;
+            padding-bottom: 4px;
+        }
+        .content .new_reg_guide_login{
+            font-size: 14px;
+            margin: 30px 0 0 39px;
+            color: #9B9B9B;
+        }
+
+        /* .formInputArea label{
+            
+            display:inline-block;
+        } */
+
+        .formInputArea input{
+            vertical-align:middle;
+        }
+
+        .content .right .reg_content_left{
+            font-size: 14px;
+            color: #333;
+            letter-spacing: 0;
+            text-align: right;
+            width: 82px;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 15px;
+            font-weight: 200;
+            display: inline-block;
+            /* float: left; */
+            vertical-align:middle;
+            
+        }
+        .content .right .reg_content_InputBox{
+            /* font-weight: 200; */
+            font-size: 14px;
+            padding: 11px 10px;
+            max-height: 40px;
+            background: #fff;
+            border-radius: 4px;
+            border: 1px solid #E0E0E0;
+            width: 280px;
+            /* color: rgb(197, 189, 189); */
+            display: inline-block;
+            /* float: left; */
+        }
+        .content .right .passButtonVerifySendCode{
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #E0E0E0;
+            width: 130px;
+            /* max-height: 40px; */
+            height: 41px;
+        }
+
+        .content .right .reg_content_InputBox::-webkit-input-placeholder{
+            color: rgb(197, 189, 189);
+        }
+
+        .content .right .registeredButton{
+            background: #BDCEFC;
+            border-radius: 25px;
+            /* padding-left: 97px; */
+            width: 380px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            color: #fff;
+            border: 0;
+            line-height: 32px;
+            border: 1px solid #E0E0E0;
+            display: inline-block;
+            position: absolute;
+            left:  34px;
+            margin-top: 20px;
+            /* padding-top: ; */
+            -webkit-transition: .3s;            
+        }
+        .readAndAccept{
+            color: #666;
+            font-size: 12px;
+            margin-left: 41px;
+            width: 399px;
+            text-align: center;
+            position: relative;
+            top: 90px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- <div class="backgroudImg">
+            <img src="reg_bg_min.jpg" alt="backgroudImg">
+        </div> -->
+        <div class="left">
+            <div>
+                <img class="baiduLogo" src="baiduLogo.png" alt="baiduLogo">
+            </div>
+            <div class="baiduSlogan">
+                <h3>用科技</h3>
+                <p>让复杂的世界更简单</p>
+            </div>
+
+            <div class="new_reg_footer">
+                <p>帮助中心</p><span>2020 ©Baidu</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="new_reg_guide_login">
+                <h3>欢迎注册</h3>
+                <p>已有账号?
+                    <span id="login_btn">登录</span>
+                </p>
+            </div>
+            <div class="reg_content">
+                <form action="">
+                    <!-- <div class="formInputArea"> -->
+                        <div class="formInputArea">
+                            <label class="reg_content_left" for="username">用户名</label>
+                            <input class="reg_content_InputBox" type="text" id="username" placeholder="请设置用户名">
+                        </div>
+                        <div class="formInputArea">
+                            <label class="reg_content_left" for="phoneNumber">手机号</label>
+                            <input class="reg_content_InputBox" type="text" id="phoneNumber" placeholder="可用于登录和找回密码">
+                        </div>
+                        <div class="formInputArea">
+                            <label class="reg_content_left" for="password">密&nbsp;&nbsp;&nbsp;码</label>
+                            <input class="reg_content_InputBox" type="password" id="password" placeholder="请设置登录密码">
+                        </div>
+                        <div class="formInputArea">
+                            <label class="reg_content_left"  for="vertifictionCode">验证码</label>
+                            <input type="button" class="passButtonVerifySendCode" value="获取验证码">
+                            <input class="reg_content_InputBox" style="width: 133px;" type="text" id="vertifictionCode" placeholder="请输入验证码">
+                        </div>
+                        <div>
+                            <button class="registeredButton">
+                                注册
+                            </button>
+                        </div>
+                        <div>
+                            <p class="readAndAccept">
+                                <input type="checkbox" id="readAgreement">
+                                <label for="readAgreement">阅读并接受</label>
+                                <a href="">《百度用户协议》</a>及<a href="">《百度隐私权保护声明》</a>
+                            </p>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

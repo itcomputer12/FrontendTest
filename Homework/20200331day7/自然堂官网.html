@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0}
+        html{height:100%;}
+        body{height:100%;}
+
+        .main{height:100%;margin-left:-2px}
+        .item{width:33.33%;height: 33.33%;float: left;}
+
+        /* 背景颜色 伪类选择器 奇数行 偶数行  :nth-child()*/
+        .item:nth-child(2n){background-color: gold;}
+        .item:nth-child(2n+1){background-color: hotpink;}
+
+        /* 
+        border-left:2px solid #fff;box-sizing: border-box;
+        
+        9个色块 33.33% 2px的边框线 而且不能掉下去 这是怎么做到的？？ 
+        
+        怪异盒子模型: box-sizing:border-box   33.33% - 2px
+        width = width (padding 和 border的值已经算进去了)
+        height = height (padding 和 border的值已经算进去了)
+
+        把第一个色块的边框单独去掉 :nth-child(1){border:0}  错误的写法 
+        => 单独去掉边框线的模块的面积会比其他模块的面积要大
+
+        最终的解决办法:利用margin的负值的技巧 整体往左移动  把左边的间距隐藏起来了而已
+        */
+    </style>
+</head>
+<body>
+    <!-- div.item*9 tab -->
+    <div class="main">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.modContent{
+    width: 1200px;
+    margin:0 auto 20px;
+    background-color: forestgreen;
+}
+
+.header{height: 83px;}
+.swiper{height: 361px;}
+/* .modConBox{height: 361px;} */
+.modItemWrap{width: 1264px;margin-left:-64px;}
+.modContentWrap{height:468px;background-color: fuchsia;margin-bottom: 20px;}
+.modContentWrap .modContent{height: 100%;}
+.footer{width:100%;background-color: #000;height:368px}
+.footer .modContent{height: 100%;}

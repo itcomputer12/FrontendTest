@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        a{
+            text-decoration: none;
+        }
+        .slider-list a{
+            display: block;
+            width: 200px;
+            height: 260px;
+            background-color: rgb(243, 237, 237);
+        }
+        .seckill-iterm-image{
+            text-align: center;
+        }
+        .seckill-iterm-image img{
+            margin-left: auto;
+            margin-right: auto;
+            width: 140px;
+            height: 140px;
+            margin-top: 30px;
+            border: 0;
+        }
+
+        .seckill-item__name{
+            font-size: 12px;
+            font-weight: 400;
+            color: #333;
+            transition: color .2s ease;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            width: 160px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 13px;
+        }
+        .secKill-price{
+            padding-top: 5px;
+        }
+
+        .slider-list .secKill-price .priceSecondKill{
+            position: absolute;
+            left: 26px;
+            width: 92px;
+            height: 22px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            float: left;
+            background-color: crimson;
+        }
+
+        .slider-list .secKill-price .priceOriginPrice::before{
+            content: " ";
+            width: 0;
+            height: 0;
+            border-color: transparent white transparent transparent;
+            border-style: solid;
+            border-width: 20px 8px 0 0;
+            position: absolute;
+            top: 0;
+            left: -2px;
+            background-color: crimson;
+        }
+
+        .slider-list .secKill-price .priceOriginPrice{
+            height: 22px;
+            width: 74px;
+            position: absolute;
+            left: 109px;
+            float: right;
+            border: 1px solid red;
+            background-color: #fff;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            line-height: 22px;
+            
+            text-decoration: line-through;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-list">
+        <a href="https://miaosha.jd.com/#17818909706">
+            <div class="seckill-iterm-image">
+                <img src="https://img30.360buyimg.com/mobilecms/s280x280_jfs/t1/88378/35/16753/86114/5e7d9d8bEb41754ef/28f1c27f49e2f343.jpg.webp" alt="iphone">
+            </div>
+            <h6 class="seckill-item__name">【二手99新】Apple iPhone 8 苹果8 二手手机 金色 64G 全网通</h6>
+            <div class="secKill-price">
+                <span class="priceSecondKill">
+                    <i>￥</i>
+                    <span>2076.00</span>
+                </span>
+                <span class="priceOriginPrice">
+                    <i>￥</i>
+                    <span>3999.00</span>
+                </span>
+            </div>
+        </a>
+
+    </div>
+</body>
+</html>

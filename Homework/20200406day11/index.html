@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+    <!-- 头部 --> 
+    <div class="header mod-content"></div>
+
+    <!-- 轮播图 -->
+    <div class="swiper mod-content">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3c409123c70dc6fa2250916cb1cf2a4b.jpg?thumb=1&w=1379&h=518&f=webp&q=90"
+                            alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/347836812589c95e1018973ed3aa3caa.jpg?thumb=1&w=1379&h=518&f=webp&q=90"
+                            alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/755aca9487082e7698e16f17cfb70839.jpg?thumb=1&w=1379&h=518&f=webp&q=90"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+    
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div>
+        <!-- nav-category site-category -->
+        <!-- 导航模块 -->
+        <div class="nav-category">
+            <ul>
+                <li>
+                    <span class="name-category">JavaScript免费基础课</span>
+                    <!-- 鼠标移上层 -->
+                    <div class="category-layer" style="background-image: url();"></div>
+                </li>
+                <li>
+                    <span class="name-category">JavaScript免费基础课</span>
+                    <!-- 鼠标移上层 -->
+                    <div class="category-layer" style="background-color: hotpink;"></div>
+                </li>
+                <li>
+                    <span class="name-category">JavaScript免费基础课</span>
+                    <!-- 鼠标移上层 -->
+                    <div class="category-layer"></div>
+                </li>
+                <li>
+                    <span class="name-category">JavaScript免费基础课</span>
+                    <!-- 鼠标移上层 -->
+                    <div class="category-layer" style="background-color: hotpink;"></div>
+                </li>
+                <li>
+                    <span class="name-category">JavaScript免费基础课</span>
+                    <!-- 鼠标移上层 -->
+                    <div class="category-layer"></div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+ 
+
+
+    <!-- 实战推荐 -->
+    <div class="mod-con-box mod-content"></div>
+
+    <!-- 免费好课 -->
+    <div class="mod-con-box mod-content"></div>
+
+    <!-- 全屏模块 -->
+    <div class="mod-content-wrap">
+        <div class="mod-content"></div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="mod-content"></div>
+    </div>
+
+
+    <script src="js/swiper.min.js"></script>
+
+    <!-- 初始化代码 -->
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+
+            loop: true, // 循环模式选项
+
+            autoplay: { //自动播放  disableOnInteraction: true 用户操作之后，停止自动播放 false开启
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            // 淡入淡出切换效果
+            effect : 'fade',
+            
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable :true,
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })        
+    </script>
+
+</body>
+
+</html>
